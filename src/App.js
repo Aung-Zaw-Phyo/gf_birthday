@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import audio from "./assets/audio/audio_1.mp3";
+import audio from "./assets/audio/audio_3.mp3";
 import svg from "./assets/images/heart_1.svg";
 import person from "./assets/images/person.jpg";
 import ParticleJs from "./components/ParticleJs";
@@ -27,12 +27,12 @@ function App() {
           hidden
         ></audio>
         <img
-          className="mx-auto relative rounded-full mb-3 w-[200px]"
+          className="mx-auto relative rounded-full mb-3 w-[200px] lg:w-[240px]"
           src={person}
           alt=""
         />
 
-        <div className="bouncing-text text-center mb-2 text-[28px] md:text-[50px] lg:text-[70px]">
+        <div className="title bouncing-text text-center mb-2 text-[28px] md:text-[50px] lg:text-[70px]">
           <span className="a">H</span>
           <span className="b">A</span>
           <span className="c">P</span>
@@ -56,17 +56,28 @@ function App() {
           <span className="r">U</span>
         </div>
 
-        <p className="message mb-4 w-full lg:w-[80%] xl:w-[60%] mx-auto text-[18px] md:text-[22px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum
-          vero qui sequi non nostrum ipsam aperiam in aspernatur hic! vero qui
+        <p className="message mb-4 w-full lg:w-[90%] mx-auto md:text-[22px]">
+          “ Happy birthday, my dear girl! <br />
+          Life may present challenges, but I believe in you can overcome them .
+          <br />
+          You deserve all the happiness and success that life has to offer.
+          <br />
+          May the coming year be filled with exciting adventures, new
+          opportunities,
+          <br /> and moments of personal growth. <br /> Cheers to you and the
+          wonderful journey ahead! 🎈 ”
         </p>
 
         {isChanged && (
-          <img className="mx-auto w-[100px] md:w-[160px]" src={svg} alt="" />
+          <img
+            className="heart mx-auto w-[100px] md:w-[140px]"
+            src={svg}
+            alt=""
+          />
         )}
         {!isChanged && (
           <button onClick={play} className="relative">
-            HIT ME
+            TOUCH ME
           </button>
         )}
       </div>

@@ -1,16 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Source+Code+Pro&display=swap");
 
 body {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: #b9151c;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
 }
 
 @tailwind base;
@@ -20,7 +16,7 @@ body {
 /* bg-[#6159CB] */
 @layer base {
   button {
-    @apply rounded border-0 bg-[red] hover:bg-[#fff] hover:text-[red] p-1 px-3 duration-300;
+    @apply rounded border-0 bg-[red] hover:bg-[#fff] hover:text-[red] p-2 px-3 duration-300;
   }
   .title {
     @apply text-[26px] sm:text-[30px];
@@ -49,16 +45,40 @@ body {
   }
 }
 
+.message {
+  text-wrap: wrap;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+}
+
 .bouncing-text {
   text-align: center;
-  /* font-size: 70px; */
   font-weight: 900;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
+  /* font-family: "Alfa Slab One", serif; */
+  font-family: "Bitter", serif;
+  /* font-family: "Source Code Pro", monospace; */
 }
 
 .bouncing-text > span {
   color: #4cc9f0;
   text-shadow: 0 3px #4361ee, 0 5px #4361ee, 0 7px #4361ee;
+}
+
+.heart {
+  animation: beat 3s ease infinite 0.3s;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .a {
