@@ -45,19 +45,24 @@ body {
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap");
+
 .message {
   text-wrap: wrap;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace !important;
+  /* font-family: "Crimson Text", serif !important; */
+  /* font-family: "Vollkorn", serif !important; */
+  font-family: "Sulphur Point", sans-serif;
 }
 
 .bouncing-text {
   text-align: center;
   font-weight: 900;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
+  /* font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important; */
   /* font-family: "Alfa Slab One", serif; */
-  font-family: "Bitter", serif;
-  /* font-family: "Source Code Pro", monospace; */
+  /* font-family: "Bitter", serif; */
+  font-family: "Crimson Text", serif !important;
 }
 
 .bouncing-text > span {
@@ -80,139 +85,3 @@ body {
     transform: scale(1);
   }
 }
-
-.a {
-  animation: bounce 1s ease infinite;
-  -webkit-animation: bounce 1s ease infinite;
-}
-
-.b {
-  animation: bounce 1s ease infinite 0.3s;
-  -webkit-animation: bounce 1s ease infinite 0.3s;
-}
-
-.c {
-  animation: bounce 1s ease infinite 0.6s;
-  -webkit-animation: bounce 1s ease infinite 0.6s;
-}
-
-.d {
-  animation: bounce 1s ease infinite 0.9s;
-  -webkit-animation: bounce 1s ease infinite 0.9s;
-}
-
-.e {
-  animation: bounce 1s ease infinite 1.2s;
-  -webkit-animation: bounce 1s ease infinite 1.2s;
-}
-
-.f {
-  animation: bounce 1s ease infinite 1.5s;
-  -webkit-animation: bounce 1s ease infinite 1.5s;
-}
-
-.g {
-  animation: bounce 1s ease infinite 1.8s;
-  -webkit-animation: bounce 1s ease infinite 1.8s;
-}
-
-.h {
-  animation: bounce 1s ease infinite 2.1s;
-  -webkit-animation: bounce 1s ease infinite 2.1s;
-}
-
-.i {
-  animation: bounce 1s ease infinite 2.4s;
-  -webkit-animation: bounce 1s ease infinite 2.4s;
-}
-
-.j {
-  animation: bounce 1s ease infinite 2.7s;
-  -webkit-animation: bounce 1s ease infinite 2.7s;
-}
-.k {
-  animation: bounce 1s ease infinite 3s;
-  -webkit-animation: bounce 1s ease infinite 3s;
-}
-
-.l {
-  animation: bounce 1s ease infinite 3.3s;
-  -webkit-animation: bounce 1s ease infinite 3.3s;
-}
-
-.m {
-  animation: bounce 1s ease infinite 3.6s;
-  -webkit-animation: bounce 1s ease infinite 3.6s;
-}
-
-.n {
-  animation: bounce 1s ease infinite 3.9s;
-  -webkit-animation: bounce 1s ease infinite 3.9s;
-}
-
-.o {
-  animation: bounce 1s ease infinite 4.2s;
-  -webkit-animation: bounce 1s ease infinite 4.2s;
-}
-.p {
-  animation: bounce 1s ease infinite 4.5s;
-  -webkit-animation: bounce 1s ease infinite 4.5s;
-}
-
-.q {
-  animation: bounce 1s ease infinite 4.8s;
-  -webkit-animation: bounce 1s ease infinite 4.8s;
-}
-
-.r {
-  animation: bounce 1s ease infinite 5.1s;
-  -webkit-animation: bounce 1s ease infinite 5.1s;
-}
-
-/* @keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-55px);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  58% {
-    transform: scale(1, 1) translateY(-7px);
-  }
-  65% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-55px);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  58% {
-    transform: scale(1, 1) translateY(-7px);
-  }
-  65% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-} */

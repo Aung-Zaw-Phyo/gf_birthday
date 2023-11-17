@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <ParticleJs config={isChanged ? particleConfig2 : particlesConfig} />
-      <div className="content text-center container mt-[50px] mb-6 text-white">
+      <div className="content text-center container mt-[20px] sm:mt-[35px] mb-4 sm:mb-6 text-white">
         <audio
           ref={audioRef}
           id="audio"
@@ -27,12 +27,12 @@ function App() {
           hidden
         ></audio>
         <img
-          className="mx-auto relative rounded-full mb-3 w-[200px] lg:w-[240px]"
+          className="mx-auto relative rounded-full mb-3 w-[180px] sm:w-[200px] lg:w-[240px]"
           src={person}
           alt=""
         />
 
-        <div className="title bouncing-text text-center mb-2 text-[28px] md:text-[50px] lg:text-[70px]">
+        <div className="title bouncing-text text-center mb-2 text-[24px] sm:text-[28px] mb:text-[40px] lg:text-[50px] xl:text-[70px]">
           <span className="a">H</span>
           <span className="b">A</span>
           <span className="c">P</span>
