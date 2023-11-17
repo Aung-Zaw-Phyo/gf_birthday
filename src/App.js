@@ -22,7 +22,6 @@ function App() {
           id="audio"
           src={audio}
           controls
-          autoPlay
           loop
           hidden
         ></audio>
