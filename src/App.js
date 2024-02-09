@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <ParticleJs config={isChanged ? particleConfig2 : particlesConfig} />
-      <div className="content text-center container mt-[20px] sm:mt-[35px] mb-4 sm:mb-6 text-white">
+      <div className="content h-[100vh] flex flex-col justify-center items-center text-center container  text-white">
         <audio
           ref={audioRef}
           id="audio"
